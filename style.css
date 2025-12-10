@@ -1,0 +1,111 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Role cards container */
+.role-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual role card */
+.role-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 280px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.role-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+/* Role icons */
+.role-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+/* Role titles */
+.role-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Role descriptions */
+.role-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
+/* Different colors for each role */
+.admin-card {
+    background: rgba(255, 193, 7, 0.2);
+}
+
+.staff-card {
+    background: rgba(23, 162, 184, 0.2);
+}
+
+.student-card {
+    background: rgba(40, 167, 69, 0.2);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .role-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .role-card {
+        width: 90%;
+    }
+}
+
+
